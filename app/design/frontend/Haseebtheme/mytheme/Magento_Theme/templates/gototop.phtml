@@ -1,0 +1,24 @@
+<style type="text/css">
+
+</style>
+
+<a rel="nofollow" onclick="javascript:void(0);" id="mfbacktop"><span class="gt-arrow"><i class="far fa-arrow-to-top" aria-hidden="true"></i></span><span class="gt-text"><?= __('') ?></span></a>
+
+<script type="text/javascript">
+ require(['jquery', 'domReady!'], function($){
+ var $bt = $('#mfbacktop');
+ function ManageGoToTop() {
+         if($(this).scrollTop() > 300) {
+             $bt.fadeIn();
+         } else {
+             $bt.fadeOut();
+         }
+     }
+     ManageGoToTop();
+     $(window).scroll(ManageGoToTop);
+     $bt.on('click touch',function() {
+         $('body,html').animate({scrollTop:0},500);
+ return false;
+     })
+});
+</script>

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<view xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/view.xsd">
+   <vars module="Magento_PageBuilder">
+    <var name="breakpoints">
+            <var name="desktop-large">
+            <var name="conditions">
+                <var name="min-width">1200px</var>
+            </var>
+            <var name="options">
+                <var name="products">
+                    <var name="default">
+                        <var name="slidesToShow">5</var>
+                    </var>
+                </var>
+            </var>
+        </var>
+        <var name="desktop">
+            <var name="conditions">
+                <var name="min-width">1024px</var>
+            </var>
+            <var name="options">
+                <var name="products">
+                    <var name="default">
+                        <var name="slidesToShow">4</var>
+                    </var>
+                </var>
+            </var>
+        </var>
+                <var name="tablet">
+            <var name="conditions">
+                <var name="min-width">768px</var>
+            </var>
+                        <var name="options">
+                <var name="products">
+                    <var name="default">
+                        <var name="slidesToShow">3</var>
+                    </var>
+                </var>
+            </var>
+        </var>
+                        <var name="mobile">
+            <var name="conditions">
+                <var name="min-width">400px</var>
+            </var>
+                        <var name="options">
+                <var name="products">
+                    <var name="default">
+                        <var name="slidesToShow">2</var>
+                    </var>
+                </var>
+            </var>
+        </var>  
+                                <var name="mobile-small">
+            <var name="conditions">
+                <var name="min-width">240px</var>
+            </var>
+                        <var name="options">
+                <var name="products">
+                    <var name="default">
+                        <var name="slidesToShow">2</var>
+                    </var>
+                </var>
+            </var>
+        </var>              
+    </var>
+    
+</vars>
+</view>
+
+

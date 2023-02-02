@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+                                    <!-- head        -->
+
+        <head>
+        <css src="css/mycss.css" />
+        </head>
+                                <!-- body -->
+<body>
+<move element="header.panel" destination="header-wrapper" after="-"/>
+<referenceBlock name="footer_links" remove="true"/>
+<referenceContainer name="copyright" remove="true"/>
+<referenceContainer name="footer">
+    <block class="Magento\Cms\Block\Block" name="salvo_footer">
+        <arguments>
+            <argument name="block_id" xsi:type="string">salvo_footer</argument>
+        </arguments>
+    </block>
+</referenceContainer>
+<move element="authorization-link" destination="header.panel" after="-"/>
+<referenceBlock name="register-link" remove="true" />  
+<move element="minicart" destination="header-wrapper" after="header.panel" />
+         <referenceContainer name="before.body.end">
+             <block name="magefan.go.to.top" template="Magento_Theme::gototop.phtml" />
+         </referenceContainer>
+ </body>	
+</page>
